@@ -2,7 +2,7 @@
   "model_type": "swinv2",
   "architectures": ["Swinv2ForImageClassification"],
   "auto_map": {
-    "AutoImageProcessor": "iamge_processing_tagger.WDv14TaggerImageProcessor"
+    "AutoImageProcessor": "image_processing_tagger.WDv14TaggerImageProcessor"
   },
   "image_size": 448,
   "embed_dim": 128,
