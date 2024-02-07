@@ -36,16 +36,6 @@ from transformers.utils import TensorType, logging
 logger = logging.get_logger(__name__)
 
 
-def to_bgr(img):
-    """PIL RGB image to OpenCV BGR format."""
-    return img[:, :, ::-1]
-
-
-def normalize_img(img):
-    """Normalize the image data to [-1, 1]."""
-    return (img.astype(np.float32) - 127.5) * (1 / 127.5)
-
-
 # copied from transformers.image_transforms.resize
 def resize_with_padding(
     image: np.ndarray,
