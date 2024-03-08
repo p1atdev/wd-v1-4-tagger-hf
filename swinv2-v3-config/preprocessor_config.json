@@ -1,0 +1,30 @@
+{
+  "image_processor_type": "WDTaggerImageProcessor",
+  "auto_map": {
+    "AutoImageProcessor": "image_processing_tagger.WDTaggerImageProcessor"
+  },
+  "color": [
+    255,
+    255,
+    255
+  ],
+  "do_normalize": true,
+  "do_rescale": true,
+  "do_resize": true,
+  "image_mean": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "image_std": [
+    0.5,
+    0.5,
+    0.5
+  ],
+  "resample": 3,
+  "rescale_factor": 0.00392156862745098,
+  "size": {
+    "height": 448,
+    "width": 448
+  }
+}

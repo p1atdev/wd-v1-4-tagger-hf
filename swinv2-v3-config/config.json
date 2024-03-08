@@ -1,0 +1,25 @@
+{
+  "model_type": "swinv2",
+  "architectures": ["Swinv2ForImageClassification"],
+  "auto_map": {
+    "AutoImageProcessor": "image_processing_tagger.WDv14TaggerImageProcessor"
+  },
+  "image_size": 448,
+  "embed_dim": 128,
+  "depths": [2, 2, 18, 2],
+  "num_heads": [4, 8, 16, 32],
+  "hidden_act": "gelu_pytorch_tanh",
+  "window_size": 14,
+  "patch_size": 4,
+  "drop_path_rate": 0.1,
+  "qkv_bias": true,
+  "layer_norm_eps": 1e-5,
+  "num_channels": 3,
+  "num_labels": 10861,
+  "mlp_ratio": 4.0,
+  "attention_probs_dropout_prob": 0.0,
+  "hidden_dropout_prob": 0.0,
+  "use_absolute_embeddings": false,
+  "torch_dtype": "float32",
+  "problem_type": "multi_label_classification"
+}
