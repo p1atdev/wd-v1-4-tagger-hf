@@ -118,6 +118,14 @@ def resize_with_padding(
 
     new_image = new_image.convert("RGB")
 
+    # Convert to numpy array
+    image_array = np.asarray(new_image, dtype=np.float32)
+
+    # Convert PIL-native RGB to BGR
+    image_array = image_array[:, :, ::-1]
+
+    new_image = Image.fromarray(image_array.astype(np.uint8))
+
     if return_numpy:
         new_image = np.array(new_image)
         # If the input image channel dimension was of size 1, then it is dropped when converting to a PIL image
